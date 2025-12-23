@@ -2,7 +2,7 @@ import {useState} from 'react';
 export default function LikeButton(){
 
     let clicked = ()=>{
-        console.log("Liked");
+        console.log("Liked..");
     }
     return(
         <div>

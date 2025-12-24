@@ -1,13 +1,15 @@
 import {useState} from 'react';
 export default function LikeButton(){
 
+    let[isLiked, setisLiked] = useState(false);
     let clicked = ()=>{
-        console.log("Liked..");
+        setisLiked(!isLiked);
+        console.log(isLiked);
     }
     return(
         <div>
             <p onClick={clicked}>
-                <i className="fa-regular fa-heart"></i>
+                {isLiked ? <i className="fa-solid fa-heart"></i> : <i className="fa-regular fa-heart"></i>}
             </p>
 
         </div>

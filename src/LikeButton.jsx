@@ -5,6 +5,7 @@ export default function LikeButton(){
     let clicked = ()=>{
         setisLiked(!isLiked);
         console.log(isLiked);
+        console.log("clicked");
     }
     return(
         <div>
